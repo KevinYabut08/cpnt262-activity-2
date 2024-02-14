@@ -39,3 +39,19 @@ fruits.pop();
 document.getElementById("mySub").onclick = function () {
   document.getElementById("myVar").textContent = `${fruits}`;
 };
+
+const cellphones = ["iphone", "samsung", "blackberry", "sony"];
+const keys = Object.keys(cellphones);
+document.getElementById("myOutput").onclick = function () {
+  document.getElementById("myText").textContent = `${keys}`;
+};
+
+const object1 = {
+  firstName: `Ryan`,
+  lastName: `Reynolds`,
+  character: `Deadpool`,
+};
+const object2 = Object.values(object1);
+document.getElementById("myButton").onclick = function () {
+  document.getElementById("myObject").textContent = `${object2}`;
+};
