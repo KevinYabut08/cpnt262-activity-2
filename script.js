@@ -1,9 +1,41 @@
-let fullName = "Kevin Yabut";
-let age = 22;
-let student = true;
+//This line is the variable of my code for increment
+let number = 1;
+// adds 1 to the variable
+number++;
+//This connects the javascript to the html in order to make the id work
+document.getElementById("myResult").onclick = function () {
+  document.getElementById("myNumber").textContent = `${number}`;
+};
 
-document.getElementById("p2").textContent = `I'm ${age} years old`;
-document.getElementById("p3").textContent = `Am I a student: ${student}`;
+//This line is the variable of my code for number to exponential
+let num = 8.67345;
+//This is the method that I used to turn my number to exponential
+let n = num.toExponential();
+//This connects the javascript to the html in order to make the id work
+document.getElementById("myRes").onclick = function () {
+  document.getElementById("myNum").textContent = `${n}`;
+};
 
-fullName = fullName.toLowerCase();
-document.getElementById("p1").textContent = `My name is ${fullName}`;
+let str = "Web Development";
+let length = str.length;
+document.getElementById("myClick").onclick = function () {
+  document.getElementById("myString").textContent = `${length}`;
+};
+
+let text = "Web Developer";
+let output = text.slice(0, 4);
+document.getElementById("myClickMe").onclick = function () {
+  document.getElementById("myStr").textContent = `${output}`;
+};
+
+const animals = ["cats", "dogs", "goats"];
+animals.push("cows");
+document.getElementById("mySubmit").onclick = function () {
+  document.getElementById("myVariable").textContent = `${animals}`;
+};
+
+const fruits = ["apple", "orange", "banana"];
+fruits.pop();
+document.getElementById("mySub").onclick = function () {
+  document.getElementById("myVar").textContent = `${fruits}`;
+};
